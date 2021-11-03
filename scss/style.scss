@@ -296,3 +296,95 @@
     margin-right: 20px;
   }
 }
+
+.spec-offer{
+  height: 100vh;
+  &__inner{
+    display: flex;
+
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+    color: #fff;
+    margin-bottom: 80px;
+  }
+  &__input{
+    height: 100vh;
+    background-image: url(../images/specoffer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 173px 73px 0 353px;
+  }
+  &__form{
+    display: flex;
+    flex-direction: column;
+    width: 510px;
+  }
+  &__label{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  &__form-name,
+  &__form-email,
+  &__form-message{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+  &__form-message{
+    resize: none;
+    height: 100px;
+  }
+  &__form-btn{
+    background-color: transparent;
+    height: 55px;
+    width: 194px;
+    position: relative;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+  }
+  &__form-arrow{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  &__content{
+    background-color: #000201;
+    width: 100%;
+    padding: 173px 353px 286px 0;
+  }
+  &__content-title{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+    color: #fff;
+    margin-bottom: 138px;
+    margin-left: 135px;
+  }
+  &__content-items{
+    display: flex;
+    margin-left: 30px;
+  }
+  &__content-item{
+    color: #fff;
+    width: 194px;
+    height: 284px;
+    border: 1px solid #fff;
+    transition: all 2s;
+    &:hover{
+      background: linear-gradient(180deg, #61B3C9 0%, #074D88 100%);
+    }
+  }
+  &__content-item+.spec-offer__content-item{
+    margin-left: 10px;
+  }
+}
