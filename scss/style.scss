@@ -301,17 +301,17 @@
   height: 100vh;
   &__inner{
     display: flex;
-
   }
   &__title{
     font-weight: 500;
     font-size: 48px;
     line-height: 58px;
     color: #fff;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
   &__input{
     height: 100vh;
+    width: 50%;
     background-image: url(../images/specoffer-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -321,6 +321,7 @@
     display: flex;
     flex-direction: column;
     width: 510px;
+    padding-right: 20px;
   }
   &__label{
     display: flex;
@@ -336,6 +337,8 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
   }
   &__form-message{
     resize: none;
@@ -359,7 +362,8 @@
   }
   &__content{
     background-color: #000201;
-    width: 100%;
+    width: 50%;
+    height: 100vh;
     padding: 173px 353px 286px 0;
   }
   &__content-title{
@@ -369,6 +373,7 @@
     color: #fff;
     margin-bottom: 138px;
     margin-left: 135px;
+    white-space: nowrap;
   }
   &__content-items{
     display: flex;
@@ -376,15 +381,66 @@
   }
   &__content-item{
     color: #fff;
-    width: 194px;
-    height: 284px;
+    min-width: 194px;
+    min-height: 284px;
     border: 1px solid #fff;
-    transition: all 2s;
+    padding: 59px 37px 30px 15px;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    position: relative;
+    transition: all .7s;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      top: -40px;
+      right: 58px;
+      border: 1px solid #fff;
+      background-color: #000;
+      z-index: 5;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      width: 79px;
+      height: 41px;
+      top: -42px;
+      right: 58px;
+      background-color: #000;
+      z-index: 6;
+    }
     &:hover{
-      background: linear-gradient(180deg, #61B3C9 0%, #074D88 100%);
+      background-image: url(../images/gradient-hover.svg);
     }
   }
   &__content-item+.spec-offer__content-item{
     margin-left: 10px;
+  }
+  &__content-item--title{
+    font-size: 19px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  &__content-item--text{
+    font-size: 16px;
+    line-height: 19px;
+    color: #E8E8E8;
+
+  }
+  &__content-cost{
+    margin-top: auto;
+  }
+  &__content-cost--last{
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: line-through;
+    margin-bottom: 6px;
+  }
+  &__content-cost--now{
+    font-size: 24px;
+    line-height: 29px;
   }
 }
