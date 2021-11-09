@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -76,10 +77,8 @@
   </header>
 
 
-  <!-- <div class="wrapper"> -->
-
-  <main class="main">
-    <section class="aplication">
+  <main class="main" id="fullpage">
+    <section class="aplication section" id="aplication">
       <div class="container">
         <div class="aplication__inner">
           <h2 class="aplication__title">web applications</h2>
@@ -92,9 +91,19 @@
           </button>
         </div>
       </div>
+
+      <div class="scroll-points">
+        <a href="#aplication" class="scroll-points__link--active"></a>
+        <a href="#about" class="scroll-points__link"></a>
+        <a href="#portfolio" class="scroll-points__link"></a>
+        <a href="#offer" class="scroll-points__link"></a>
+        <a href="#benefits" class="scroll-points__link"></a>
+        <a href="#spec-offer" class="scroll-points__link"></a>
+        <a href="#footer" class="scroll-points__link"></a>
+      </div>
     </section>
 
-    <section class="about">
+    <section class="about section" id="about">
       <div class="about__inner">
         <div class="about__img">
           <img class="about__image" src="images/about.png" alt="">
@@ -106,9 +115,18 @@
           <p class="about__text">Продвижение – поможем вам быстро добиться желаемого результата, обеспечим постоянный приток новых заявок.</p>
         </div>
       </div>
+      <div class="scroll-points">
+        <a href="#aplication" class="scroll-points__link"></a>
+        <a href="#about" class="scroll-points__link--active"></a>
+        <a href="#portfolio" class="scroll-points__link"></a>
+        <a href="#offer" class="scroll-points__link"></a>
+        <a href="#benefits" class="scroll-points__link"></a>
+        <a href="#spec-offer" class="scroll-points__link"></a>
+        <a href="#footer" class="scroll-points__link"></a>
+      </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio section" id="portfolio">
       <div class="container">
         <div class="portfolio__inner">
           <h3 class="portfolio__title">Портфолио</h3>
@@ -121,9 +139,18 @@
           </button>
         </div>
       </div>
+      <div class="scroll-points">
+        <a href="#aplication" class="scroll-points__link"></a>
+        <a href="#about" class="scroll-points__link"></a>
+        <a href="#portfolio" class="scroll-points__link--active"></a>
+        <a href="#offer" class="scroll-points__link"></a>
+        <a href="#benefits" class="scroll-points__link"></a>
+        <a href="#spec-offer" class="scroll-points__link"></a>
+        <a href="#footer" class="scroll-points__link"></a>
+      </div>
     </section>
 
-    <section class="offer">
+    <section class="offer section" id="offer">
       <div class="container">
         <div class="offer__inner">
           <h3 class="offer__title">Что мы предлагаем</h3>
@@ -235,9 +262,18 @@
           </div>
         </div>
       </div>
+      <div class="scroll-points">
+        <a href="#aplication" class="scroll-points__link"></a>
+        <a href="#about" class="scroll-points__link"></a>
+        <a href="#portfolio" class="scroll-points__link"></a>
+        <a href="#offer" class="scroll-points__link--active"></a>
+        <a href="#benefits" class="scroll-points__link"></a>
+        <a href="#spec-offer" class="scroll-points__link"></a>
+        <a href="#footer" class="scroll-points__link"></a>
+      </div>
     </section>
 
-    <section class="benefits">
+    <section class="benefits section" id="benefits">
       <div class="container">
         <div class="benefits__inner">
           <h3 class="benefits__title">Наши преимущества</h3>
@@ -265,9 +301,18 @@
           </div>
         </div>
       </div>
+      <div class="scroll-points">
+        <a href="#aplication" class="scroll-points__link"></a>
+        <a href="#about" class="scroll-points__link"></a>
+        <a href="#portfolio" class="scroll-points__link"></a>
+        <a href="#offer" class="scroll-points__link"></a>
+        <a href="#benefits" class="scroll-points__link--active"></a>
+        <a href="#spec-offer" class="scroll-points__link"></a>
+        <a href="#footer" class="scroll-points__link"></a>
+      </div>
     </section>
 
-    <section class="spec-offer">
+    <section class="spec-offer section" id="spec-offer">
       <div class="spec-offer__inner">
 
         <div class="spec-offer__input">
@@ -291,6 +336,7 @@
         </div>
 
         <div class="spec-offer__content">
+
           <h3 class="spec-offer__content-title">Спец предложения </h3>
           <div class="spec-offer__content-items">
 
@@ -323,69 +369,86 @@
             </div>
           </div>
         </div>
-
+      </div>
+      <div class="scroll-points">
+        <a href="#aplication" class="scroll-points__link"></a>
+        <a href="#about" class="scroll-points__link"></a>
+        <a href="#portfolio" class="scroll-points__link"></a>
+        <a href="#offer" class="scroll-points__link"></a>
+        <a href="#benefits" class="scroll-points__link"></a>
+        <a href="#spec-offer" class="scroll-points__link--active"></a>
+        <a href="#footer" class="scroll-points__link"></a>
       </div>
     </section>
-
-
+    <footer class="footer section" id="footer">
+      <div class="container">
+        <div class="footer__items">
+          <div class="footer__item">
+            <h4 class="footer__item-title">Пункт</h4>
+            <p class="footer__item-text">В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.</p>
+            <p class="footer__item-text">Пункт</p>
+            <p class="footer__item-text">Пункт</p>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__item-title">Пункт</h4>
+            <p class="footer__item-text">В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.</p>
+            <p class="footer__item-text">Пункт</p>
+            <p class="footer__item-text">Пункт</p>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__item-title">Пункт</h4>
+            <p class="footer__item-text">В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.</p>
+            <p class="footer__item-text">Пункт</p>
+            <p class="footer__item-text">Пункт</p>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__item-title">Контакты</h4>
+            <a href="tel:777777777777" class="footer__item-link footer__item-link--phone">+7 777 7777 77 77</a>
+            <a href="mailto:email@email.ru" class="footer__item-link footer__item-link--email">email@email.ru</a>
+            <p class="footer__item-link footer__item-link--point">г. Москва</p>
+          </div>
+        </div>
+        <div class="footer__social">
+          <a class="footer__social-title" href="#">digital flow</a>
+          <div class="footer__social-list">
+            <a href="#" class="footer__social-link">
+              <img src="images/telegram.svg" alt="" class="footer__social-img">
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="images/vkontakte.svg" alt="" class="footer__social-img">
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="images/instagram.svg" alt="" class="footer__social-img">
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="images/email.svg" alt="" class="footer__social-img">
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="images/phone.svg" alt="" class="footer__social-img">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-points">
+        <a href="#aplication" class="scroll-points__link"></a>
+        <a href="#about" class="scroll-points__link"></a>
+        <a href="#portfolio" class="scroll-points__link"></a>
+        <a href="#offer" class="scroll-points__link"></a>
+        <a href="#benefits" class="scroll-points__link"></a>
+        <a href="#spec-offer" class="scroll-points__link"></a>
+        <a href="#footer" class="scroll-points__link--active"></a>
+      </div>
+    </footer>
   </main>
 
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__items">
-        <div class="footer__item">
-          <h4 class="footer__item-title">Пункт</h4>
-          <p class="footer__item-text">В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.</p>
-          <p class="footer__item-text">Пункт</p>
-          <p class="footer__item-text">Пункт</p>
-        </div>
-        <div class="footer__item">
-          <h4 class="footer__item-title">Пункт</h4>
-          <p class="footer__item-text">В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.</p>
-          <p class="footer__item-text">Пункт</p>
-          <p class="footer__item-text">Пункт</p>
-        </div>
-        <div class="footer__item">
-          <h4 class="footer__item-title">Пункт</h4>
-          <p class="footer__item-text">В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.</p>
-          <p class="footer__item-text">Пункт</p>
-          <p class="footer__item-text">Пункт</p>
-        </div>
-        <div class="footer__item">
-          <h4 class="footer__item-title">Контакты</h4>
-          <a href="tel:777777777777" class="footer__item-link footer__item-link--phone">+7 777 7777 77 77</a>
-          <a href="mailto:email@email.ru" class="footer__item-link footer__item-link--email">email@email.ru</a>
-          <p class="footer__item-link footer__item-link--point">г. Москва</p>
-        </div>
-      </div>
-      <div class="footer__social">
-        <a class="footer__social-title" href="#">digital flow</a>
-        <div class="footer__social-list">
-          <a href="#" class="footer__social-link">
-            <img src="images/telegram.svg" alt="" class="footer__social-img">
-          </a>
-          <a href="#" class="footer__social-link">
-            <img src="images/vkontakte.svg" alt="" class="footer__social-img">
-          </a>
-          <a href="#" class="footer__social-link">
-            <img src="images/instagram.svg" alt="" class="footer__social-img">
-          </a>
-          <a href="#" class="footer__social-link">
-            <img src="images/email.svg" alt="" class="footer__social-img">
-          </a>
-          <a href="#" class="footer__social-link">
-            <img src="images/phone.svg" alt="" class="footer__social-img">
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
+
 
   <!-- </div> -->
 
 
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js" charset="utf-8"></script>
   <script src="js/main.js"></script>
 </body>
 

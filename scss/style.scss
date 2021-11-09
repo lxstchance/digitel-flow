@@ -3,13 +3,23 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
-
+section{
+  position: relative;
+}
 .header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #191A1E;
+  color: #fff;
+  padding: 26px 0 25px;
   &__inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 26px;
+    // min-height: 80px;
   }
   &__btn{
     cursor: pointer;
@@ -18,7 +28,6 @@
   }
 }
 
-
 .rightside-menu{
   position: absolute;
   right: 0;
@@ -26,9 +35,10 @@
   bottom: 0;
   max-width: 751px;
   width: 100%;
-  background-color: #000;
+  height: 100vh;
+  background: #000;
   transition: all .6s;
-  z-index: 5;
+  z-index: 15;
   &.rightside-menu--close{
     transform: translateX(500%);
   }
@@ -100,12 +110,13 @@
   background-position: center center;
   background-size: cover;
   height: 100vh;
-  margin-top: -75px;
-  &__inner{
+  display: flex !important;
+  padding-top: 250px;
+    &__inner{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 250px;
+
   }
   &__title{
     text-transform: uppercase;
@@ -298,9 +309,10 @@
 }
 
 .spec-offer{
-  height: 100vh;
+
   &__inner{
     display: flex;
+
   }
   &__title{
     font-weight: 500;
@@ -523,5 +535,37 @@
   &__social-link{
     display: inline-block;
     margin-left: 10px;
+  }
+}
+
+.scroll-points{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 138px;
+  top: 45%;
+  &__link{
+    margin-bottom: 30px;
+    &::before{
+      content: '';
+      position:absolute;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #000;
+      border: 2px solid #8D8C92;
+    }
+  }
+  &__link--active{
+    margin-bottom: 30px;
+    &::before{
+      content: '';
+      position:absolute;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 2px solid #8D8C92;
+    }
   }
 }

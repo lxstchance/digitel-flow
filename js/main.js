@@ -5,4 +5,11 @@ $(function () {
   $('.rightside-menu__close').on('click', function () {
     $('.rightside-menu').addClass('rightside-menu--close')
   });
+
+  $('#fullpage').fullpage({
+		autoScrolling:true,
+		scrollHorizontally: true,
+    sectionSelector:'.section',
+    
+	});
 });
