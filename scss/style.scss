@@ -541,9 +541,13 @@ section{
 .scroll-points{
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   right: 138px;
   top: 45%;
+  z-index: 999;
+  & li{
+    padding-bottom: 40px;
+  }
   &__link{
     margin-bottom: 30px;
     &::before{

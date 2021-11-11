@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -76,9 +76,34 @@
     </div>
   </header>
 
+  <div class="scroll-points" id="scroll-nav">
+    <ul>
+      <li data-menuanchor='aplication'>
+        <a href="#aplication" class="scroll-points__link scroll-points__link--active"></a>
+      </li>
+      <li data-menuanchor='about'>
+        <a href="#about" class="scroll-points__link"></a>
+      </li>
+      <li data-menuanchor='portfolio'>
+        <a href="#portfolio" class="scroll-points__link"></a>
+      </li>
+      <li data-menuanchor='offer'>
+        <a href="#offer" class="scroll-points__link"></a>
+      </li>
+      <li data-menuanchor='benefits'>
+        <a href="#benefits" class="scroll-points__link"></a>
+      </li>
+      <li data-menuanchor='spec-offer'>
+        <a href="#spec-offer" class="scroll-points__link"></a>
+      </li>
+      <li data-menuanchor='footer'>
+        <a href="#footer" class="scroll-points__link"></a>
+      </li>
+    </ul>
+  </div>
 
   <main class="main" id="fullpage">
-    <section class="aplication section" id="aplication">
+    <section class="aplication section" data-anchor="aplication">
       <div class="container">
         <div class="aplication__inner">
           <h2 class="aplication__title">web applications</h2>
@@ -92,18 +117,10 @@
         </div>
       </div>
 
-      <div class="scroll-points">
-        <a href="#aplication" class="scroll-points__link--active"></a>
-        <a href="#about" class="scroll-points__link"></a>
-        <a href="#portfolio" class="scroll-points__link"></a>
-        <a href="#offer" class="scroll-points__link"></a>
-        <a href="#benefits" class="scroll-points__link"></a>
-        <a href="#spec-offer" class="scroll-points__link"></a>
-        <a href="#footer" class="scroll-points__link"></a>
-      </div>
+
     </section>
 
-    <section class="about section" id="about">
+    <section class="about section" data-anchor="about">
       <div class="about__inner">
         <div class="about__img">
           <img class="about__image" src="images/about.png" alt="">
@@ -115,18 +132,9 @@
           <p class="about__text">Продвижение – поможем вам быстро добиться желаемого результата, обеспечим постоянный приток новых заявок.</p>
         </div>
       </div>
-      <div class="scroll-points">
-        <a href="#aplication" class="scroll-points__link"></a>
-        <a href="#about" class="scroll-points__link--active"></a>
-        <a href="#portfolio" class="scroll-points__link"></a>
-        <a href="#offer" class="scroll-points__link"></a>
-        <a href="#benefits" class="scroll-points__link"></a>
-        <a href="#spec-offer" class="scroll-points__link"></a>
-        <a href="#footer" class="scroll-points__link"></a>
-      </div>
     </section>
 
-    <section class="portfolio section" id="portfolio">
+    <section class="portfolio section" data-anchor="portfolio">
       <div class="container">
         <div class="portfolio__inner">
           <h3 class="portfolio__title">Портфолио</h3>
@@ -139,18 +147,9 @@
           </button>
         </div>
       </div>
-      <div class="scroll-points">
-        <a href="#aplication" class="scroll-points__link"></a>
-        <a href="#about" class="scroll-points__link"></a>
-        <a href="#portfolio" class="scroll-points__link--active"></a>
-        <a href="#offer" class="scroll-points__link"></a>
-        <a href="#benefits" class="scroll-points__link"></a>
-        <a href="#spec-offer" class="scroll-points__link"></a>
-        <a href="#footer" class="scroll-points__link"></a>
-      </div>
     </section>
 
-    <section class="offer section" id="offer">
+    <section class="offer section" data-anchor="offer">
       <div class="container">
         <div class="offer__inner">
           <h3 class="offer__title">Что мы предлагаем</h3>
@@ -262,18 +261,9 @@
           </div>
         </div>
       </div>
-      <div class="scroll-points">
-        <a href="#aplication" class="scroll-points__link"></a>
-        <a href="#about" class="scroll-points__link"></a>
-        <a href="#portfolio" class="scroll-points__link"></a>
-        <a href="#offer" class="scroll-points__link--active"></a>
-        <a href="#benefits" class="scroll-points__link"></a>
-        <a href="#spec-offer" class="scroll-points__link"></a>
-        <a href="#footer" class="scroll-points__link"></a>
-      </div>
     </section>
 
-    <section class="benefits section" id="benefits">
+    <section class="benefits section" data-anchor="benefits">
       <div class="container">
         <div class="benefits__inner">
           <h3 class="benefits__title">Наши преимущества</h3>
@@ -301,18 +291,9 @@
           </div>
         </div>
       </div>
-      <div class="scroll-points">
-        <a href="#aplication" class="scroll-points__link"></a>
-        <a href="#about" class="scroll-points__link"></a>
-        <a href="#portfolio" class="scroll-points__link"></a>
-        <a href="#offer" class="scroll-points__link"></a>
-        <a href="#benefits" class="scroll-points__link--active"></a>
-        <a href="#spec-offer" class="scroll-points__link"></a>
-        <a href="#footer" class="scroll-points__link"></a>
-      </div>
     </section>
 
-    <section class="spec-offer section" id="spec-offer">
+    <section class="spec-offer section" data-anchor="spec-offer">
       <div class="spec-offer__inner">
 
         <div class="spec-offer__input">
@@ -370,17 +351,9 @@
           </div>
         </div>
       </div>
-      <div class="scroll-points">
-        <a href="#aplication" class="scroll-points__link"></a>
-        <a href="#about" class="scroll-points__link"></a>
-        <a href="#portfolio" class="scroll-points__link"></a>
-        <a href="#offer" class="scroll-points__link"></a>
-        <a href="#benefits" class="scroll-points__link"></a>
-        <a href="#spec-offer" class="scroll-points__link--active"></a>
-        <a href="#footer" class="scroll-points__link"></a>
-      </div>
+
     </section>
-    <footer class="footer section" id="footer">
+    <footer class="footer section" data-anchor="footer">
       <div class="container">
         <div class="footer__items">
           <div class="footer__item">
@@ -429,15 +402,6 @@
           </div>
         </div>
       </div>
-      <div class="scroll-points">
-        <a href="#aplication" class="scroll-points__link"></a>
-        <a href="#about" class="scroll-points__link"></a>
-        <a href="#portfolio" class="scroll-points__link"></a>
-        <a href="#offer" class="scroll-points__link"></a>
-        <a href="#benefits" class="scroll-points__link"></a>
-        <a href="#spec-offer" class="scroll-points__link"></a>
-        <a href="#footer" class="scroll-points__link--active"></a>
-      </div>
     </footer>
   </main>
 
@@ -448,7 +412,8 @@
 
 
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js" charset="utf-8"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js' charset="utf-8"></script>
   <script src="js/main.js"></script>
 </body>
 
